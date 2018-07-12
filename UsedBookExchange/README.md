@@ -61,7 +61,7 @@ Write a web application that creates a marketplace for used OSU textbooks. The a
     Checkout book in the Shopping Cart | Shopping Cart/Book
     
   ****
-  - ###Seller
+  - ### Seller
     #### Attribute
 
     Attr_Name    | Type
@@ -83,10 +83,10 @@ Write a web application that creates a marketplace for used OSU textbooks. The a
     Cancel a book sale | Book
     View current state of sales | Book
   ***
-  - ###Book
+  - ### Book
   ***
-  - ###Shopping Cart
+  - ### Shopping Cart
   ***
-  - ###Sale
+  - ### Sale
   ***
   
