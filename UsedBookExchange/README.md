@@ -1,24 +1,92 @@
-# README
+# Used Book Exchange Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+University Book Exchange. At the end of each term, many students sell their textbooks to second-hand bookstores to recuperate some of the purchase cost. These stores, in turn, re-sell the used books to students after some mark-up. If students could buy and sell directly to other students, they could cut out the middleman and earn more while spending less.
 
-* Ruby version
+Write a web application that creates a marketplace for used OSU textbooks. The application should allow students to register their books for sale as well as find books they are interested in buying. With used books, both the price and the condition of the item are important, so both should be reflected in titles for sale (or seeking).
 
-* System dependencies
+## User
+* ### Visitor
+  1. _Search Book_
+  2. _Filiter result_
+  3. _View Item_
 
-* Configuration
+* ### Buyer
+  1. _Add to/Delete From Cart
+  2. _Check Out_
 
-* Database creation
+* ### Seller
+  1. _Create A New Book Sale_
+  2. _Edit Book Infomation_
+  3. _Cancel A Sale_
+  4. _View Condition Of Sale_
 
-* Database initialization
+## Class
+  - ### Visitor
+    #### Attribute
+    
+    Attr_Name    | Type
+    -------------|---------
+    
+    #### Behavior
+    
+    Activity     | Collaborator
+    -------------|--------------
+    Sign up | Buyer/Seller
+    Search Book | Book
+    Filiter Result | Book
+    View Book information | Book
+ ***
+  - ### Buyer
+    #### Attribute
+    
+    Attr_Name    | Type
+    -------------|---------
+    Username     | string
+    Password     | string
+    Name         | string
+    Phone number | phone_number
+    Email        | email
+    
+    #### Behavior
+    
+    Activity     | Collaborator
+    -------------|--------------
+    Log in | 
+    Edit Self Information | 
+    View Shopping Cart | Shopping Cart
+    Add book into Shopping Cart | Shopping Cart/Book
+    Delete book from Shopping Cart | Shopping Cart/Book
+    Checkout book in the Shopping Cart | Shopping Cart/Book
+    
+  ****
+  - ###Seller
+    #### Attribute
 
-* How to run the test suite
+    Attr_Name    | Type
+    -------------|---------
+    Username     | string
+    Password     | string
+    Name         | string
+    Phone number | phone_number
+    Email        | email
 
-* Services (job queues, cache servers, search engines, etc.)
+    #### Behavior
 
-* Deployment instructions
-
-* ...
+    Activity     | Collaborator
+    -------------|--------------
+    Log in | 
+    Edit Self Information | 
+    Create a new book sell | Book
+    Edit book information | Book
+    Cancel a book sale | Book
+    View current state of sales | Book
+  ***
+  - ###Book
+  ***
+  - ###Shopping Cart
+  ***
+  - ###Sale
+  ***
+  
