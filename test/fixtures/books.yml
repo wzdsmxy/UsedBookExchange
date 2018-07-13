@@ -2,10 +2,20 @@
 
 one:
   title: MyString
-  description: MyText
+  price: 1.5
   author: MyString
+  condition: MyString
+  bookclass: MyString
+  bookediton: MyString
+  description: MyText
+  ISBN: MyString
 
 two:
   title: MyString
-  description: MyText
+  price: 1.5
   author: MyString
+  condition: MyString
+  bookclass: MyString
+  bookediton: MyString
+  description: MyText
+  ISBN: MyString

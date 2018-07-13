@@ -1,7 +1,7 @@
 source 'https://ruby.taobao.org/'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.4.1'
+ruby '2.4.4'
 
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'jquery-rails'

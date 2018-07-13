@@ -1,9 +1,12 @@
-
-<%= simple_form_for @book do |f| %>
-  <%= select_tag(:category_id , options_for_select(@categories), :prompt => "Select ad category")
-  <%= f.input :title,label:"Book Title" %>
-  <%= f.input :description,label:"Book Description" %>
-  <%= f.input :author,label:"Book Author" %>
-  <%= f.input :price,label:"Book Price" %>
+<%= simple_form_for @book ,:html => {:multipart => true} do |f| %>
+  <%= select_tag(:category_id , options_for_select(@categories), :prompt => "Select a category") %>
+  <%= f.input :title,label:"Title" %>
+  <%= f.input :price,label:"Price" %>
+  <%= f.input :author,label:"Author" %>
+  <%= f.input :condition,label:"Condition" %>
+  <%= f.input :bookclass,lable:"Class" %>
+  <%= f.input :bookedition,label:"Edition" %>
+  <%= f.input :description,label:"description" %>
+  <%= f.input :ISBN,label:"ISBN" %>
   <%= f.button :submit %>
 <% end %>

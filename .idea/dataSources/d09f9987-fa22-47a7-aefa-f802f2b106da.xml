@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="Rails UsedBookExchange: development">
+<dataSource name="development">
   <database-model serializer="dbm" rdbms="SQLITE" format-version="4.9">
     <root id="1">
       <ServerVersion>3.20.1</ServerVersion>
