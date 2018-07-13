@@ -48,6 +48,7 @@
     <orderEntry type="library" scope="PROVIDED" name="capybara (v3.3.1, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="childprocess (v0.9.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="chromedriver-helper (v1.2.0, ruby-2.4.4-p296) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.2.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.2.2, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.12.2, ruby-2.4.4-p296) [gem]" level="application" />
@@ -67,6 +68,8 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.7.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="marcel (v0.3.2, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v0.9.0, ruby-2.4.4-p296) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types (v3.1, ruby-2.4.4-p296) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mime-types-data (v3.2016.0521, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mimemagic (v0.3.2, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_mime (v1.0.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mini_portile2 (v2.3.0, ruby-2.4.4-p296) [gem]" level="application" />
@@ -76,6 +79,7 @@
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.3.1, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.8.4, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-2.4.4-p296) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="paperclip (v6.0.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v3.0.2, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.11.4, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v2.0.5, ruby-2.4.4-p296) [gem]" level="application" />
@@ -100,6 +104,7 @@
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.7.2, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.1, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.13, ruby-2.4.4-p296) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="terrapin (v0.6.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v0.20.0, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thread_safe (v0.3.6, ruby-2.4.4-p296) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tilt (v2.0.8, ruby-2.4.4-p296) [gem]" level="application" />

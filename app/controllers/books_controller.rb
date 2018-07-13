@@ -37,6 +37,7 @@ class BooksController < ApplicationController
   end
 
   def create
+    # @categories = Category.all.map{|c| [c.name, c.id]}
     @book = current_user.books.build(book_params)
     @book.category_id = params[:category_id]
     if @book.save
@@ -49,7 +50,8 @@ class BooksController < ApplicationController
   private
 
   def book_params
-    params.require(:book).permit(:title, :price, :author, :condition,:bookclass,:bookedition,:description,:ISBN,:category_id)
+    params.require(:book).permit(:title, :price, :author, :condition,
+         :bookclass,:bookedition,:description,:ISBN,:category_id,:book_img)
   end
 
   def find_book
