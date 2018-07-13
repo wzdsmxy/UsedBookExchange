@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   resources :books
-  root 'books#index'
+  get '/list',to:'books#index'
+  get '/search', to: 'system#search'
+  root 'system#index'
 end

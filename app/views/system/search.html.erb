@@ -1,0 +1,40 @@
+<div class="search_bar">
+  <form action="search" method="get">
+    <input type="text" name="search_string" id="search" value=<%= @search_string %>>
+	<input type="submit" value="find">
+  </form>
+</div>
+
+<div class="book_list">
+  <%= @book_list.each do |book| %>
+    <div class="book_item">
+      <div class="book_title">
+      Title: <%= book[:title] %>
+      </div>
+      <div class="book_price">
+      Price: <%= book[:price] %>
+      </div>
+      <div class="book_author">
+      Author: <%= book[:author] %>
+      </div>
+      <div class="book_condition">
+      Condition: <%= book[:condition] %>
+      </div>
+      <div class="book_class">
+      Class: <%= book[:course] %>
+      </div>
+      <div class="book_edition">
+      Edition: <%= book[:edition] %>
+      </div>
+      <div class="book_description">
+      Description: <%= book[:description] %>
+      </div>
+      <div class="book_ISBN">
+      ISBN: <%= book[:ISBN] %>
+      </div>
+      <div class="book_seller">
+      Seller: <%= book[:seller] %>
+      </div>
+    </div>
+  <% end %>
+</div>

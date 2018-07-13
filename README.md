@@ -34,6 +34,7 @@ Write a web application that creates a marketplace for used OSU textbooks. The a
     Activity     | Collaborator
     -------------|--------------
     Sign up | Buyer/Seller
+    Sign in | Buyer/Seller
     Search Book | Book
     Filiter Result | Book
     View Book information | Book
@@ -53,7 +54,6 @@ Write a web application that creates a marketplace for used OSU textbooks. The a
     
     Activity     | Collaborator
     -------------|--------------
-    Log in | 
     Edit Self Information | 
     View Shopping Cart | Shopping Cart
     Add book into Shopping Cart | Shopping Cart/Book
@@ -76,17 +76,53 @@ Write a web application that creates a marketplace for used OSU textbooks. The a
 
     Activity     | Collaborator
     -------------|--------------
-    Log in | 
     Edit Self Information | 
-    Create a new book sell | Book
+    Create a new book sale | Book
     Edit book information | Book
     Cancel a book sale | Book
     View current state of sales | Book
   ***
   - ### Book
+    #### Attribute
+
+    Attr_Name    | Type
+    -------------|---------
+    Title        | string
+    Author       | string
+    Class        | string
+    Edition      | string
+    Description  | string
+    Condition    | string
+    Price        | float
+    Photo        | img
+    ISBN         | int
+    Seller_id    | int
+
+    #### Behavior
+
   ***
   - ### Shopping Cart
+  
+    #### Attribute
+
+    Attr_Name    | Type
+    -------------|---------
+    Book_id      | int
+    Buyer_id     | int
+
+    #### Behavior
+
   ***
   - ### Sale
+  
+    #### Attribute
+
+    Attr_Name    | Type
+    -------------|---------
+    Book_id      | int
+    Buyer_id     | int
+    Seller_id    | int
+
+    #### Behavior
   ***
   
