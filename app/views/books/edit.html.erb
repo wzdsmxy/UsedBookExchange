@@ -1,3 +1,5 @@
+<div class="col-md-6 col-md-offset-3">
+  <div class="new-book-form">
 <h1>Edit Book</h1>
 <%= simple_form_for @book ,:html => {:multipart => true} do |f| %>
   <%= f.select :category_id,@categories %>
@@ -10,5 +12,6 @@
   <%= f.input :bookedition,label:"Edition" %>
   <%= f.input :description,label:"description" %>
   <%= f.input :ISBN,label:"ISBN" %>
-  <%= f.button :submit %>
+  <%= f.button :submit ,:class => 'btn-custom2'%>
 <% end %>
+  </div></div>

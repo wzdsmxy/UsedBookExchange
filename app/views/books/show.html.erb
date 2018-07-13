@@ -16,15 +16,14 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-md-4">
-    here is review!
-  </div>
-</div>
-<%= link_to 'Back',list_path %>
+
+<div class="links btn-group">
+
+<%= link_to 'Back',list_path,class:"btn btn-custom" %>
 <% if user_signed_in? %>
 <% if @book.user_id == current_user.id %>
-  <%= link_to 'Edit',edit_book_path(@book) %>
-<%= link_to 'Delete',book_path(@book),method: :delete,data:{confirm: "Are You Sure?"} %>
+  <%= link_to 'Edit',edit_book_path(@book) ,class:"btn btn-custom"%>
+<%= link_to 'Delete',book_path(@book),method: :delete,data:{confirm: "Are You Sure?"},class:"btn btn-custom" %>
 <% end %>
 <% end %>
+</div>
