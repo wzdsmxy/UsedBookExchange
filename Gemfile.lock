@@ -196,7 +196,6 @@ GEM
       tzinfo (>= 1.0.0)
     uglifier (4.1.14)
       execjs (>= 0.3.0, < 3)
-    wdm (0.1.1)
     web-console (3.6.2)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -233,11 +232,10 @@ DEPENDENCIES
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)
-  wdm (>= 0.1.0)
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.4.4p296
+   ruby 2.4.1p111
 
 BUNDLED WITH
    1.16.2

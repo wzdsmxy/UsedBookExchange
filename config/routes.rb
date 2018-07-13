@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
   resources :books
-  root 'books#index'
+  
+  get '/search', to: 'system#search'
+  
+  root 'system#index'
 end
