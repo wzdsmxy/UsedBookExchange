@@ -2,7 +2,6 @@
   <div class="new-book-form">
 <h1>Edit Book</h1>
 <%= simple_form_for @book ,:html => {:multipart => true} do |f| %>
-  <%= f.select :category_id,@categories %>
   <%= f.file_field :book_img %>
   <%= f.input :title,label:"Title" %>
   <%= f.input :price,label:"Price" %>

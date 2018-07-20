@@ -1,6 +1,9 @@
 class Book < ApplicationRecord
-  belongs_to  :user
-  belongs_to  :category
+  belongs_to :seller, class_name: "User", foreign_key: "user_id"
+  has_many :shoppingcarts
+  has_many :users, :through => :shoppingcarts
+  #has_many :user through 
+  
   has_attached_file :book_img, default_url: "/images/:style/missing.png"
                     # :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
                     # :url => "/system/:attachment/:id/:style/:filename",

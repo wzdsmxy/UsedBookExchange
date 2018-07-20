@@ -1,0 +1,17 @@
+<% user = user_dropdown%>
+<div class="dropdown">
+  <button class="dropbtn">Welcome, <%= user.username %></button>
+    <div class="dropdown-content">
+      <% if user.role == "Seller"  %>
+      <li class="">
+        <%= link_to "Add Book",new_book_path, class: "dropdown-item" %>
+        <a href="">Edit Information</a>
+      </li>
+      <% else %>
+      <li class="">
+        <a href="">Shopping Cart</a>
+        <a href="">Edit Information</a>
+      </li>
+      <% end %>
+    </div>
+</div>

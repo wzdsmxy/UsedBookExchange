@@ -1,0 +1,18 @@
+<h1 class="current-category"><%= params[:category] %></h1>
+
+<% if @books.count == 0 %>
+
+  <h1>There are no books in the cart</h1>
+
+<% else %>
+  <div class="row">
+  <% @books.each do |book| %>
+    <div class="col-md-3">
+    <a href="/books/<%= book.id %>">
+      <%= image_tag book.book_img.url(:original),:class => "book"%>
+    </a>
+    <h3 align="center"><%= link_to book.title, book_path(book) %></h3>
+    </div>
+  <% end %>
+  </div>
+<% end %>

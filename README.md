@@ -126,3 +126,5 @@ Write a web application that creates a marketplace for used OSU textbooks. The a
     #### Behavior
   ***
   
+useful information:
+add params to sign_in/sign_up: https://github.com/plataformatec/devise/wiki/How-To:-Allow-users-to-sign-in-with-something-other-than-their-email-address

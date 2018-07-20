@@ -6,7 +6,7 @@ class CreateBooks < ActiveRecord::Migration[5.2]
       t.string :author
       t.string :condition
       t.string :bookclass
-      t.string :bookediton
+      t.string :bookedition
       t.text :description
       t.string :ISBN
 

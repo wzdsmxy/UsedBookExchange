@@ -2,23 +2,16 @@ class BooksController < ApplicationController
   before_action :find_book, only: [:show, :edit, :update, :destroy]
 
   def index
-    if params[:category].blank?
-      @books = Book.all.order("created_at DESC")
-    else
-      @category_id = Category.find_by(name: params[:category]).id
-      @books = Book.where(:category_id => @category_id).order("created_at DESC")
-    end
+    @books = Book.all.order("created_at DESC")
   end
 
   def show
   end
 
   def edit
-    @categories = Category.all.map{|c| [c.name, c.id]}
   end
 
   def update
-    @book.category_id = params[:category_id]
     if @book.update(book_params)
       redirect_to book_path(@book)
     else
@@ -32,16 +25,14 @@ class BooksController < ApplicationController
   end
 
   def new
-    @book = current_user.books.build
-    @categories = Category.all.map{|c| [c.name, c.id]}
+    @book = Book.new
   end
 
   def create
-    # @categories = Category.all.map{|c| [c.name, c.id]}
-    @book = current_user.books.build(book_params)
-    @book.category_id = params[:category_id]
+    @book = Book.new(book_params)
+    @book.seller = current_user
     if @book.save
-      redirect_to list_path
+      redirect_to root_path
     else
       render 'new'
     end
@@ -51,7 +42,7 @@ class BooksController < ApplicationController
 
   def book_params
     params.require(:book).permit(:title, :price, :author, :condition,
-         :bookclass,:bookedition,:description,:ISBN,:category_id,:book_img)
+         :bookclass,:bookedition,:description,:ISBN,:book_img)
   end
 
   def find_book
