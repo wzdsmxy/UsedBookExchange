@@ -1,5 +1,5 @@
 <% if @books.count == 0 %>
-  <h1>There are no books in the cart</h1>
+  <h1>You have no book on sale</h1>
 <% else %>
   <div class="row">
   <% @books.each do |book| %>
@@ -8,6 +8,8 @@
       <%= image_tag book.book_img.url(:original),:class => "book"%>
     </a>
     <h3 align="center"><%= link_to book.title, book_path(book) %></h3>
+    <%= link_to 'Edit',edit_book_path(book) ,class:"btn btn-custom"%>
+    <%= link_to 'Delete',book_path(book),method: :delete,data:{confirm: "Are You Sure?"},class:"btn btn-custom" %>
     </div>
   <% end %>
   </div>

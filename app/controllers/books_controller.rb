@@ -38,6 +38,10 @@ class BooksController < ApplicationController
     end
   end
 
+  def manage
+    @books = Book.where(:seller => current_user.id)
+  end
+
   private
 
   def book_params

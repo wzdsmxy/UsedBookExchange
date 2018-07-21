@@ -2,16 +2,16 @@
 <div class="dropdown">
   <button class="dropbtn">Welcome, <%= user.username %></button>
     <div class="dropdown-content">
+      <li class="">
       <% if user.role == "Seller"  %>
-      <li class="">
-        <%= link_to "Add Book",new_book_path, class: "dropdown-item" %>
-        <a href="">Edit Information</a>
-      </li>
+        <%= link_to "Post a Sale",new_book_path, class: "dropdown-item" %>
+        <%= link_to "Manage Sales","/book/manage", class: "dropdown-item" %>
       <% else %>
-      <li class="">
-        <a href="">Shopping Cart</a>
-        <a href="">Edit Information</a>
-      </li>
+        <%= link_to "View Cart",shoppingcart_path, class: "dropdown-item" %>
       <% end %>
+      <span class="dropdown-item"> EDIT</span>
+      <%= link_to "Personal Info",edit_user_registration_path(:method => "personal_info"), class: "dropdown-item" %>
+      <%= link_to "Security Info",edit_user_registration_path(:method => "security_info"), class: "dropdown-item" %>
+      </li>
     </div>
 </div>

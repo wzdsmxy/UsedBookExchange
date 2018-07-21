@@ -20,10 +20,6 @@
 
 <%= link_to 'Back',list_path,class:"btn btn-custom" %>
 <% if user_signed_in? %>
-  <% if @book.seller.id == current_user.id %>
-    <%= link_to 'Edit',edit_book_path(@book) ,class:"btn btn-custom"%>
-    <%= link_to 'Delete',book_path(@book),method: :delete,data:{confirm: "Are You Sure?"},class:"btn btn-custom" %>
-  <% end %>
   <% if current_user.role == "Buyer" %>
     <% if Shoppingcart.where(:user_id => current_user.id, :book => @book.id).blank?  %>
       <%= link_to 'Add To Cart', {:controller => "shoppingcart", :action => "create", :item => @book}, method: :post, class:"btn btn-custom"%>
